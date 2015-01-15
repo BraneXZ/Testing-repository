@@ -38,7 +38,20 @@ server.sendmail('GMAIL ACCOUNT', 'TO EMAIL ADDRESS', 'From: "GalaxySeatChecker" 
 server.close()
 ```
 
+(PHONE NUMBER)@txt.att.net will send a text to your AT&T phone, if that's your carrier. 
+
 Then 
 ```
 chmod +x send_txt.py
 ```
+
+The final installation step is to add it to your crontab. `*/5 * * * *` will run it every 5 minutes. 
+
+##### What it does
+1. The script logs into Galaxy using the credentials in user_id
+2. It saves the cookies to cookies.txt; this contains the session information
+3. It pulls your shopping cart, and saves the html file
+4. With a series of greps and cuts, the script assembles an array of your classes
+5. If the script sees that one of your classes is open, it sends the info to send_txt.py as an argument
+
+###### It's very late and I'm very pissed at ECS Undergrad Advising. They're quite useless when you need to enroll in classes, and this is the only viable way I can enroll in one of my critical path classes this semester. 
