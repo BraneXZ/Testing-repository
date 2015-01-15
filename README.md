@@ -1,6 +1,6 @@
 ### Galaxy Seat Checker
 
-This script will send an email when it sees that a class in your shopping cart as an open seat. 
+This script will send an email when it sees that a class in your shopping cart has an open seat. 
 
 ##### What it does
 1. The script logs into Galaxy using the credentials in user_id
