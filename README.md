@@ -10,27 +10,35 @@ This script will send an email when it sees that a class in your shopping cart a
 - Crontab
 
 ##### Installation
-> git clone https://github.com/ke5gdb/GalaxySeatChecker.git
-> cd GalaxySeatChecker
-> touch user_id
+```
+git clone https://github.com/ke5gdb/GalaxySeatChecker.git
+cd GalaxySeatChecker
+touch user_id
+```
 
 In user_id, add two lines
-> USERID=(your netID)
-> PASS=(your netID password)
+```
+USERID=(your netID)
+PASS=(your netID password)
+```
 
 In send_txt.py, add this
-> #!/usr/bin/python
->
-> import smtplib
-> import sys 
->
-> text = str(sys.argv[1])
->
-> server = smtplib.SMTP("smtp.gmail.com", 587)
-> server.starttls()
-> server.login('GMAIL ACCOUNT', 'GMAIL PASS')
-> server.sendmail('GMAIL ACCOUNT', 'TO EMAIL ADDRESS', 'From: "GalaxySeatChecker" <GMAIL ACCOUNT>\r\nTo: TO EMAIL ADDRESS\r\n\r\n' + text)
-> server.close()
+```
+#!/usr/bin/python
+
+import smtplib
+import sys 
+
+text = str(sys.argv[1])
+
+server = smtplib.SMTP("smtp.gmail.com", 587)
+server.starttls()
+server.login('GMAIL ACCOUNT', 'GMAIL PASS')
+server.sendmail('GMAIL ACCOUNT', 'TO EMAIL ADDRESS', 'From: "GalaxySeatChecker" <GMAIL ACCOUNT>\r\nTo: TO EMAIL ADDRESS\r\n\r\n' + text)
+server.close()
+```
 
 Then 
-> chmod +x send_txt.py
+```
+chmod +x send_txt.py
+```
