@@ -54,4 +54,4 @@ The final installation step is to add it to your crontab. `*/5 * * * *` will run
 4. With a series of greps and cuts, the script assembles an array of your classes
 5. If the script sees that one of your classes is open, it sends the info to send_txt.py as an argument
 
-###### It's very late and I'm very pissed at ECS Undergrad Advising. They're quite useless when you need to enroll in classes, and this is the only viable way I can enroll in one of my critical path classes this semester. 
+###### It's very late and I'm very pissed at ECS Undergrad Advising. They're quite useless when you need to enroll in classes, especially when they won't put you on the waitlist. This is the only viable way I can enroll in one of my critical path classes this semester. Yes, there are probably bugs in the code. No, it probably won't work out of the box, but if you're smart enough to read this far, you'll probably figure it out. You should also note that I'm not a great programmer. Good luck, and may you never have to deal with the incompetence known as the advising office again. 
